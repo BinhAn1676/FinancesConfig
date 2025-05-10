@@ -27,7 +27,7 @@ server:
   port: 8081
 
 users:
-  message: "Welcome to Finance users related APIs test "
+  message: "Welcome to Finance users related APIs "
   contactDetails:
     name: "Nguyen Binh An - Developer"
     email: "nguyenbinhankma@gmail.com"
