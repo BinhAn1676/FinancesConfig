@@ -44,4 +44,4 @@ minio:
   url: http://localhost:9000
   access-key: loki
   secret-key: supersecret
-  bucket-name: userFiles
+  bucket-name: user-files

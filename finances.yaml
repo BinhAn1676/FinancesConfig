@@ -36,7 +36,7 @@ minio:
   url: http://localhost:9000
   access-key: loki
   secret-key: supersecret
-  bucket-name: userFiles
+  bucket-name: finance-files
 
 users:
   message: "Welcome to Finance finances related APIs "
