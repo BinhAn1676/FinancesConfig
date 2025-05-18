@@ -19,6 +19,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect  # Updated to newer dialect
         format_sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:7080/realms/finance/protocol/openid-connect/certs"
   servlet:
     multipart:
       max-file-size: 5MB
