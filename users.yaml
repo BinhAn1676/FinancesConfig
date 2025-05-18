@@ -26,8 +26,8 @@ spring:
           jwk-set-uri: "http://localhost:7080/realms/finance/protocol/openid-connect/certs"
   servlet:
     multipart:
-      max-file-size: 5MB
-      max-request-size: 5MB
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 server:
   port: 8081
