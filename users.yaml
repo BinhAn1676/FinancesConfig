@@ -35,3 +35,9 @@ users:
     email: "nguyenbinhankma@gmail.com"
   onCallSupport:
     - 099781056
+
+minio:
+  url: http://localhost:9000
+  access-key: loki
+  secret-key: supersecret
+  bucket-name: userFiles

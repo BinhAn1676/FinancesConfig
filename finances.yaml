@@ -19,7 +19,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect  # Updated to newer dialect
         format_sql: true
-
   servlet:
     multipart:
       max-file-size: 5MB
@@ -27,6 +26,12 @@ spring:
 
 server:
   port: 8082
+
+minio:
+  url: http://localhost:9000
+  access-key: loki
+  secret-key: supersecret
+  bucket-name: userFiles
 
 users:
   message: "Welcome to Finance finances related APIs "
