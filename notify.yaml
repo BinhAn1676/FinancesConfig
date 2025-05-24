@@ -1,0 +1,28 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+server:
+  port: 8083
+
+info:
+  app:
+    name: "notification-service"
+    description: "Notification Service Application"
+    version: "1.0.0"
+
+logging:
+  level:
+    com:
+      finance:
+        notificationservice: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
