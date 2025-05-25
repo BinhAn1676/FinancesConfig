@@ -4,6 +4,9 @@ spring:
   threads:
     virtual:
       enabled: true
+  redis:
+    host: localhost
+    port: 6319
   datasource:
     url: jdbc:mysql://localhost:3316/finance?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
