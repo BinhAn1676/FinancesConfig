@@ -6,7 +6,7 @@ spring:
       enabled: true
   redis:
     host: 127.0.0.1
-    port: 6319
+    port: 6379
   datasource:
     url: jdbc:mysql://localhost:3316/finance?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
