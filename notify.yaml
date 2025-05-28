@@ -5,7 +5,7 @@ spring:
     virtual:
       enabled: true
   redis:
-    host: localhost
+    host: 127.0.0.1
     port: 6319
   datasource:
     url: jdbc:mysql://localhost:3316/finance?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
@@ -22,6 +22,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect  # Updated to newer dialect
         format_sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:7080/realms/finance/protocol/openid-connect/certs"
   servlet:
     multipart:
       max-file-size: 100MB

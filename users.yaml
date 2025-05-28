@@ -5,7 +5,7 @@ spring:
     virtual:
       enabled: true
   redis:
-    host: localhost
+    host: 127.0.0.1
     port: 6319
   datasource:
     url: jdbc:mysql://localhost:3316/finance?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
